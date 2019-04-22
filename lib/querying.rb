@@ -3,7 +3,7 @@ def select_books_titles_and_years_in_first_series_order_by_year
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  "SELECT TOP Characters.name, Characters.motto FROM characters GROUP BY name, motto HAVING MAX(LENGTH(Characters.motto))"
+  "SELECT Characters.name, Characters.motto FROM characters GROUP BY name, motto HAVING MAX(LENGTH(Characters.motto))"
   # "SELECT Characters.name, Characters.motto, MAX(LENGTH(Characters.motto)) FROM characters GROUP BY Characters.name"
 end
 
